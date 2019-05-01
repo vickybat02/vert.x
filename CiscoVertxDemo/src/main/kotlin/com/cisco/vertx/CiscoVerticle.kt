@@ -12,6 +12,7 @@ import io.vertx.ext.web.Router
 		val mongoVertx = Vertx.vertx();
 
 		val router = Router.router(vertx)
+		//calling http get operation for simplifying things for this demo
 		router.get("/crudOperations")
 			  .handler({
 				  routingContext ->
